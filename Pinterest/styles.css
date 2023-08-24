@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  #navbar-pinterest {
+    background-color: #e60023;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .finder {
+    border: none;
+    padding: 5px;
+    border-radius: 20px;
+    margin-right: 10px;
+  }
+  
+  #notifications,
+  #message,
+  #profile-img {
+    display: inline-block;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  #content {
+    margin-top: 60px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .card-image {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .card-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-image:hover .overlay {
+    display: flex;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+  
+  .overlay button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 10px;
+  }
+  
+  #pinterest-icon {
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    #navbar-pinterest {
+      padding: 5px;
+    }
+    .finder {
+      margin-right: 5px;
+    }
+  }
+  
